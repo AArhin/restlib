@@ -77,10 +77,12 @@ type
     Label13: TLabel;
     Panel4: TPanel;
     WebBrowser1: TWebBrowser;
+    Button2: TButton;
     procedure Button1Click(Sender: TObject);
     procedure FormDestroy(Sender: TObject);
     procedure FormCreate(Sender: TObject);
     procedure UpDown1Click(Sender: TObject; Button: TUDBtnType);
+    procedure Button2Click(Sender: TObject);
   private
     { Private êÈåæ }
   public
@@ -112,6 +114,12 @@ begin
   UpDown1.Position := 0;
   GetHimatch(1);
   Display(0);
+end;
+
+procedure TForm1.Button2Click(Sender: TObject);
+begin
+  if edtUrl.Text = '' then Exit;
+  WebBrowser1.Navigate(edtUrl.Text, navOpenInNewWindow);
 end;
 
 procedure TForm1.Display(No: Integer);

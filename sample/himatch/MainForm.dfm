@@ -22,7 +22,6 @@ object Form1: TForm1
     Height = 113
     Align = alTop
     TabOrder = 0
-    ExplicitWidth = 426
     object Label3: TLabel
       Left = 24
       Top = 79
@@ -97,7 +96,6 @@ object Form1: TForm1
     Height = 32
     Align = alTop
     TabOrder = 1
-    ExplicitWidth = 426
     DesignSize = (
       428
       32)
@@ -125,8 +123,6 @@ object Form1: TForm1
     Height = 307
     Align = alClient
     TabOrder = 2
-    ExplicitLeft = -24
-    ExplicitTop = 142
     object Label4: TLabel
       Left = 24
       Top = 32
@@ -172,8 +168,8 @@ object Form1: TForm1
     object Label10: TLabel
       Left = 24
       Top = 194
-      Width = 45
-      Height = 20
+      Width = 43
+      Height = 13
       Caption = 'PostTime'
     end
     object Label11: TLabel
@@ -263,9 +259,18 @@ object Form1: TForm1
     object edtUrl: TEdit
       Left = 112
       Top = 272
-      Width = 293
+      Width = 233
       Height = 21
       TabOrder = 9
+    end
+    object Button2: TButton
+      Left = 353
+      Top = 272
+      Width = 60
+      Height = 21
+      Caption = 'open'
+      TabOrder = 10
+      OnClick = Button2Click
     end
   end
   object Panel4: TPanel
