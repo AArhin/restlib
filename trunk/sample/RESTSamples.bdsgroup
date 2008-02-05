@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <PersonalityInfo>
+    <Option>
+      <Option Name="Personality">Default.Personality</Option>
+      <Option Name="ProjectType"></Option>
+      <Option Name="Version">1.0</Option>
+      <Option Name="GUID">{3547E1F3-9C19-4BB4-AE84-029DCD835B99}</Option>
+    </Option>
+  </PersonalityInfo>
+  <Default.Personality>
+    
+    <Projects>
+      <Projects Name="himatch.exe">himatch\himatch.bdsproj</Projects>
+      <Projects Name="livedoorweather.exe">livedoor_weather\livedoorweather.bdsproj</Projects>
+      <Projects Name="Targets">himatch.exe livedoorweather.exe</Projects>
+    </Projects>
+    <Dependencies/>
+  </Default.Personality>
+</BorlandProject>
