@@ -102,7 +102,7 @@ implementation
 
 {$R *.dfm}
 
-uses XMLIntf, httpsend;
+uses XMLIntf;
 
 const PAGE_COUNT = 10;
 
@@ -198,22 +198,9 @@ begin
   end;
 end;
 
-
 procedure TForm1.ShowURLImage(const Url: String);
-var
-  ds: TMemoryStream;
-  path: string;
 begin
-  ds := TMemoryStream.Create;
-  try
-    if HttpGetBinary(url, ds) then begin
-      path := ExtractFilePath(ParamStr(0)) + 'tmp.gif';
-      ds.SaveToFile(path);
-      WebBrowser1.Navigate(path);
-    end;
-  finally
-    ds.Free;
-  end;
+  WebBrowser1.Navigate(Url);
 end;
 
 procedure TForm1.UpDown1Click(Sender: TObject; Button: TUDBtnType);
